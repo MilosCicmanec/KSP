@@ -11,4 +11,4 @@ Tým, že prechádzame celý vstup iba raz a vykonávame konštantné operácie 
 
     -priestorovú zložitosť tiež O(n) – a to v najhoršom prípade, keď sa žiadne znaky nevyrušia a všetky zostanú v zásobníku. 
 
- 
+https://www.ksp.sk/ulohy/zadania/2931/

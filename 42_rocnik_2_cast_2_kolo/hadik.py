@@ -33,3 +33,6 @@ if a > m or b > n:
     print(0)
 else:
     print((m-a+1)*(n-b+1))
+
+
+#https://www.ksp.sk/ulohy/zadania/2932/
