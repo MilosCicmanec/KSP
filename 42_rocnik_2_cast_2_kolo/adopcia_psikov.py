@@ -11,4 +11,4 @@ for char in s:
 
 print(len(stack))
 
-#https://www.ksp.sk/ulohy/zadania/2931/
+#  https://www.ksp.sk/ulohy/zadania/2931/

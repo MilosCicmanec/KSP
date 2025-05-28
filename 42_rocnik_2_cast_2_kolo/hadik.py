@@ -35,4 +35,4 @@ else:
     print((m-a+1)*(n-b+1))
 
 
-#https://www.ksp.sk/ulohy/zadania/2932/
+#  https://www.ksp.sk/ulohy/zadania/2932/
