@@ -21,3 +21,5 @@ def delete_string(s):
             moves += 1
 
     return moves
+
+print(delete_string(string))
