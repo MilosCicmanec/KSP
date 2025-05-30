@@ -1,25 +1,20 @@
+from functools import lru_cache
+import sys
+sys.setrecursionlimit(2000)
+def min_partitions(s):
+    n = len(s)
+    
+    @lru_cache(None)
+    def dfs(start):
+        if start == n:
+            return 0
+        min_parts = float('inf')
+        for end in range(start, n):
+            if end == start or s[start] == s[end]:
+                min_parts = min(min_parts, 1 + dfs(end + 1))
+        return min_parts
+    
+    return dfs(0)
+
 string = list(input())
-
-
-def delete_string(s):
-    moves = 0
-    s = list(s)
-
-    while s:
-        found = False
-       
-        for end in range(len(s) - 1, 0, -1):
-            if s[0] == s[end]:
-               
-                del s[0:end+1]
-                moves += 1
-                found = True
-                break
-        if not found:
-            
-            del s[0]
-            moves += 1
-
-    return moves
-
-print(delete_string(string))
+print(min_partitions(string))
